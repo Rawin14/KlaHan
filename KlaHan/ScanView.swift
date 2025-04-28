@@ -26,7 +26,7 @@ struct ScanView: View {
             }) {
                 Text("เปิดกล้องเพื่อแสกน")
                     .padding()
-                    .background(Color.blue)
+                    .background(Color(red: 0/255, green: 105/255, blue: 92/255))
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
