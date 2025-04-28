@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isLoggedIn = false
+    
     var body: some View {
-        VStack {
-            
-            Text("Hello i sus")
+        NavigationStack {
+            if isLoggedIn {
+                HomeView()
+            } else {
+                LoginView(isLoggedIn: $isLoggedIn)
+            }
         }
-        .padding()
     }
 }
+
 
 #Preview {
     ContentView()
